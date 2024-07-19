@@ -1,0 +1,10 @@
+{
+  "name": "com.ahd2.custom-package-template",
+  "version": "0.1.0",
+  "displayName": "AHD2-PackageTemplate",
+  "description": "自用package开发模板。",
+  "unity": "2021.3",
+  "author": {
+    "name": "ahd2"
+  }
+}
