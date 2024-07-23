@@ -1,8 +1,8 @@
 {
-  "name": "com.ahd2.custom-package-template",
+  "name": "com.ahd2.simple-cartoon-shading",
   "version": "0.1.0",
-  "displayName": "AHD2-PackageTemplate",
-  "description": "自用package开发模板。",
+  "displayName": "AHD2-SimpleCartoonShading",
+  "description": "仿supercell风格的简单卡通着色器.",
   "unity": "2021.3",
   "author": {
     "name": "ahd2"
