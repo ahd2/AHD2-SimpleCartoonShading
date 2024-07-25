@@ -6,15 +6,17 @@
 CBUFFER_START(UnityPerMaterial)
 //贴图ST
 float4 _MainTex_ST;
-float4 _MetalCap_ST;
-float4 _RoughnessCap_ST;
+float4 _NormalMap_ST;
 //half4
 half4 _BaseCol;
+
+half4 _FresnelColor;
 //half
 half _Metalness;
 half _MetalIntensity;
 half _Roughness;
 half _RoughnessIntensity;
+half _FresnelRatio;
 
 half _ShadowRatio;
 half _ShadowShreshold;
@@ -24,6 +26,7 @@ CBUFFER_END
 
 //贴图采样
 sampler2D _MainTex;
+sampler2D _NormalMap;
 sampler2D _MetalCap;
 sampler2D _RoughnessCap;
 

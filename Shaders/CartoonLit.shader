@@ -2,16 +2,29 @@ Shader "AHD2SimpleCartoonShading/CartoonLit"
 {
     Properties
     {
+        [Header(MainColor)]
+        [Space(10)]
         _MainTex ("Texture", 2D) = "white" {}
         _BaseCol("BaseCol", Color) = (1, 1, 1, 1)
+        
+        [Header(FakePBR)]
+        [Space(10)]
+        //法线
+        _NormalMap("NormalMap", 2D) = "bump" { }
+        
+        [Space(10)]
         //金属度粗糙度
         _MetalCap("MetalCap", 2D) = "" { }
         _Metalness("Metalness", Range(0,1)) = 0.0
         _MetalIntensity("金属度亮度", Range(0,1)) = 1
-        
+        [Space(10)]
         _RoughnessCap("RoughnessCap", 2D) = "" { }
         _Roughness("Roughness", Range(0,1)) = 0.0
         _RoughnessIntensity("粗糙度亮度", Range(0,1)) = 0.27
+        [Space(10)]
+        //菲涅尔
+        _FresnelColor("菲涅尔颜色", Color) = (0, 0, 0, 1)
+        _FresnelRatio("菲涅尔范围", Range(0.01,1)) = 0.01
         //阴影
         [Header(Shadow)]
         [Space(10)]

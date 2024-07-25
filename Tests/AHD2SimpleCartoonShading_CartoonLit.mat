@@ -44,6 +44,7 @@ Material:
     m_Floats:
     - _0: 1
     - _1: 0.263
+    - _FresnelRatio: 0.01
     - _Metal: 0
     - _MetalIntensity: 1
     - _Metalness: 0
@@ -55,5 +56,6 @@ Material:
     - _ShadowShreshold: 0.544
     m_Colors:
     - _BaseCol: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0, g: 0, b: 0, a: 1}
     - _shadowcol: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
