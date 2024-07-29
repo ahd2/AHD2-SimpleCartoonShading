@@ -79,7 +79,12 @@ half4 CartoonLitFragment (v2f i) : SV_Target
     col.xyz *= lightmapColor;
 
     half4 finalcol = _ShadowRatio * col  + (1 - _ShadowRatio) *  col *  shadow ; //确定基础明暗
-    finalcol.xyz = lerp(finalcol.xyz , finalcol.xyz * mainLight.color,shadow);//光照部分受方向光影响，阴影部分受环境光影响
+    finalcol.xyz = lerp(finalcol.xyz * ambient, finalcol.xyz * mainLight.color,shadow);//光照部分受方向光影响
+
+    //高光
+    half3 halfDir = normalize((i.viewDirWS + mainLight.direction));
+    half blinnPhong = pow(saturate(dot(halfDir , i.normalWS)) , _HighLightRange);
+    finalcol = lerp(finalcol,_HightLightIntensity * finalcol,blinnPhong);
 
     //多光源
     uint pixelLightCount = GetAdditionalLightsCount();

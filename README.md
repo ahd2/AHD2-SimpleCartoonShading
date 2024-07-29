@@ -57,7 +57,7 @@ https://github.com/ahd2/AHD2-SimpleCartoonShading.git
     <img src="https://github.com/ahd2/AHD2-DocsRepo/blob/main/AHD2_SimpleCartoonShading/5.png?raw=true" alt="1" style="zoom: 80%;" />
   </p>
 
-当调整场景环境光时，如果是以烘焙光照贴图的静态物体，仅会影响其暗部色调。否则会影响其全局色调。
+当调整场景环境光时，会影响其全局色调。
 
  <p align="center">
     <img src="https://github.com/ahd2/AHD2-DocsRepo/blob/main/AHD2_SimpleCartoonShading/6.png?raw=true" alt="1" style="zoom: 80%;" />

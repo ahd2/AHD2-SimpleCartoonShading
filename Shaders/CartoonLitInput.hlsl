@@ -17,6 +17,9 @@ half _MetalIntensity;
 half _Roughness;
 half _RoughnessIntensity;
 half _FresnelRatio;
+//高光
+half _HightLightIntensity;
+half _HighLightRange;
 
 half _ShadowRatio;
 half _ShadowShreshold;

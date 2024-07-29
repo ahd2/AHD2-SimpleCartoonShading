@@ -25,6 +25,10 @@ Shader "AHD2SimpleCartoonShading/CartoonLit"
         //菲涅尔
         _FresnelColor("菲涅尔颜色", Color) = (0, 0, 0, 1)
         _FresnelRatio("菲涅尔范围", Range(0.01,1)) = 0.01
+        [Space(10)]
+        //高光
+        _HightLightIntensity("高光强度", Range(1,2)) = 1.05
+        _HighLightRange("高光范围", Range(1,20)) = 5
         //阴影
         [Header(Shadow)]
         [Space(10)]
